@@ -89,16 +89,66 @@
           </div>
           </form>
           </div>
-          <div class="col-lg-1" style="margin-top:10vh;margin-bottom: 10vh">
-            <input type="button"  id="alert2" value="企业识别">
+          <div class="col-lg-1" style="margin-top:9vh;margin-bottom: 10vh">
+            <a class="DownButtonNormal" name="DownLoadHistEvent"download="分类结果.csv" href="分类结果.csv">企业识别</a>
           </div>
-            <div class="col-lg-2" style="margin-top:10vh;margin-bottom: 10vh">
-            <a class="DownButtonNormal" name="DownLoadHistEvent"download="分类结果.csv" href="分类结果.csv">点击生成报告</a>
+          <div class="col-lg-1" style="margin-top:9vh;margin-bottom: 10vh">
+          <a class="DownButtonNormal" name="DownLoadHistEvent"download="广西省的僵尸企业列表.csv" href="广西省的僵尸企业列表.csv">点击生成报告</a>
+        </div>
+          <div class="col-lg-5" style="margin-top:10vh;margin-bottom: 10vh">
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >注册时间</option>
+              <option value ="1">2000</option>
+              <option value ="2">2001</option>
+              <option value ="3">2002</option>
+              <option value ="4">2003</option>
+              <option value ="5">2004</option>
+              <option value ="6">2005</option>
+              <option value ="7">2006</option>
+              <option value ="8">2007</option>
+              <option value ="9">2008</option>
+              <option value ="10">2009</option>
+              <option value ="11">2010</option>
+              <option value ="12">2011</option>
+              <option value ="13">2012</option>
+              <option value ="14">2013</option>
+              <option value ="15">2014</option>
+            </select>
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >行业</option>
+              <option value ="1">服务业</option>
+              <option value ="2">交通运输业</option>
+              <option value ="3">工业</option>
+              <option value ="4">零售业</option>
+              <option value ="5">商业服务业</option>
+              <option value ="6">社区服务</option>
+            </select>
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >区域</option>
+              <option value ="1">广东</option>
+              <option value ="2">江西</option>
+              <option value ="3">山东</option>
+              <option value ="4">广西</option>
+              <option value ="5">湖南</option>
+              <option value ="6">湖北</option>
+              <option value ="7">福建</option>
+            </select>
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >企业类型</option>
+              <option value ="1">股份有限公司</option>
+              <option value ="2">农民专业合作社</option>
+              <option value ="3">集体所有制企业</option>
+              <option value ="4">有限责任公司</option>
+            </select>
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >控制人类型</option>
+              <option value ="1">企业法人</option>
+              <option value ="2">自然人</option>
+            </select>
+            </div>
           </div>
-
         </div>
       </div>
-    </div>
     <script src="js.js"></script>
 </body>
 </html>
