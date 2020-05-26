@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,minimum-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>index</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <nav class="navbar navbar-default" style="margin-bottom: 0">
+       <div class="col-sm-12 col-lg-12" style="padding-right: 0; font-size: 1.3vw; padding-top: 0.3vh">
+           <ul class="nav navbar-nav">
+             <li>
+              <a href="index.html">
+                Home
+              </a>
+             </li>
+            <li>
+             <a href="1.html">
+               构建企业全息画像
+             </a>
+            </li>
+            <li class="dropdown"><a href="2.html">
+               僵尸企业识别分类
+            </a> </li>
+           </ul>
+       </div>
+  </nav>
+  <div class="jumbotron" style="background-color:#669; margin-bottom: 0">
+    <h2 align=center style="color:white; margin-top: 16vh; margin-bottom: 4vh">构建企业全息画像</h2>
+    <div class="row" style="margin-bottom: 7vh">
+      <div class="col-lg-5">
+      </div>
+    <div class="col-lg-7">
+
+        <form action="/upload" method="post" enctype="multipart/form-data" style="color: white">
+          <div>
+          <label for="uploads">点击上传文件(csv)</label>
+          <input type="file" name="upload" id="uploads">
+          </div>
+          <div>
+        <button style="color: #333">Submit</button>
+      </div>
+      </form>
+      </div>
+      </div>
+  <div class="row" style="margin-bottom: 16vh">
+    <div class="col-lg-4">
+    </div>
+  <div class="col-lg-4">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <button type="button" class="btn btn-default" id="button"></button>
+      </span>
+      <input type="text" class="form-control" aria-label="..." value="输入查询ID">
+    </div>
+  </div>
+
+</div>
+
+    </div>
+    <div class="row">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">企业画像</a></li>
+        <li role="presentation"><a href="#OceanWarming" aria-controls="OceanWarming" role="tab" data-toggle="tab">基本信息</a></li>
+        <li role="presentation" ><a href="#Sheet" aria-controls="Sheet" role="tab" data-toggle="tab">运营风险</a></li>
+        <li role="presentation" ><a href="#Trash" aria-controls="Trash" role="tab" data-toggle="tab">知识产权</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="all">
+          <div class="panel panel-default">
+  <div class="panel-heading">&nbsp;&nbsp;&nbsp;企业画像</div>
+  <div class="col-xs-6 col-lg-4">
+  </div>
+  <div class="col-xs-6 col-lg-8">
+    <br /><br /><br /><br />
+    <img src="企业画像.png"/ style="margin-bottom: 10vh">
+    <br /><br /><br /><br />
+  </div>
+</div>
+</div>
+        <div role="tabpanel" class="tab-pane" id="OceanWarming">
+          <div class="col-xs-12 col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">基本信息</div>
+              <table class="table" style="margin-bottom: 10vh">
+      <tbody>
+        <tr>
+          <th>企业ID</th>
+          <td>906489</td>
+          <th>注册时间</th>
+          <td>2001</td>
+        </tr>
+        <tr>
+          <th>注册资本</th>
+          <td>910</td>
+          <th>行业</th>
+          <td>服务员</td>
+        </tr>
+        <tr>
+          <th>区域</th>
+          <td>广西省</td>
+          <th>企业类型</th>
+          <td>合伙企业</td>
+        </tr>
+        <tr>
+          <th>控制人类型</th>
+          <td>企业法人</td>
+          <th>控制人持股</th>
+          <td>0.67</td>
+        </tr>
+      </tbody>
+    </table>
+          </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Sheet">
+            <div class="panel panel-default">
+    <div class="panel-heading">   &nbsp;&nbsp;&nbsp;运营风险</div>
+    <div class="col-xs-6 col-lg-4">
+    </div>
+    <div class="col-xs-6 col-lg-8">
+      <br /><br />
+      <img src="营业能力分布图.png"/>
+      <br /><br />
+    </div>
+  </div>
+            <div class="col-xs-12 col-sm-12" style="margin-top: 10vh;margin-bottom: 10vh">
+            <div class="panel panel-default">
+  <div class="panel-heading">各标签值</div>
+  <table class="table">
+        <thead>
+          <tr>
+            <th>年份</th>
+            <th>从业人数</th>
+            <th>资产总额</th>
+            <th>负债总额</th>
+            <th>融资规模</th>
+            <th>营业总收入</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2015</td>
+            <td>61</td>
+            <td>63700</td>
+            <td>94185</td>
+            <td>3822</td>
+            <td>38220</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>312</td>
+            <td>68250</td>
+            <td>33670</td>
+            <td>6825</td>
+            <td>88725</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>589</td>
+            <td>72800</td>
+            <td>107835</td>
+            <td>7280</td>
+            <td>145600</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <table class="table">
+            <thead>
+              <tr>
+                <th>年份</th>
+                <th>从业人数</th>
+                <th>资产总额</th>
+                <th>负债总额</th>
+                <th>融资规模</th>
+                <th>营业总收入</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>2015</th>
+                <td>15288</td>
+                <td>19110</td>
+                <td>-3288</td>
+                <td>0</td>
+                <td>-30485</td>
+              </tr>
+              <tr>
+                <th>2016</th>
+                <td>35490</td>
+                <td>8872.5</td>
+                <td>-9560</td>
+                <td>0</td>
+                <td>34580</td>
+              </tr>
+              <tr>
+                <th>2017</th>
+                <td>55420</td>
+                <td>14560</td>
+                <td>-14560</td>
+                <td>0</td>
+                <td>-35035</td>
+              </tr>
+            </tbody>
+          </table>
+</div>
+          </div>
+          <div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+          <div class="panel panel-default">
+  <div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业负债率</div>
+  <div class="col-xs-6 col-lg-4">
+  </div>
+  <div class="col-xs-6 col-lg-8">
+    <br /><br />
+    <img src="负债率.png" style="margin-bottom: 4vh"/>
+    <br /><br />
+  </div>
+  <div class="col-xs-6 col-lg-4">
+  </div>
+  <div class="col-xs-6 col-lg-8">
+    <br /><br />
+    <img src="负债率折线图.png" style="margin-bottom: 4vh"/>
+    <br /><br />
+  </div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+<div class="panel panel-default">
+<div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业营业总收入</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="营业总收入.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="营业总收入折线图.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+<div class="panel panel-default">
+<div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业利润总额</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="利润总额.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="利润总额折线图.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+<div class="panel panel-default">
+<div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业净利润</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="净利润.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="净利润折线图.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+<div class="panel panel-default">
+<div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业纳税总额</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="纳税总额.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="纳税总额折线图.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12" style="margin-bottom: 10vh">
+<div class="panel panel-default">
+<div class="panel-heading">   &nbsp;&nbsp;&nbsp;企业融资总规模</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="融资总规模.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+<div class="col-xs-6 col-lg-4">
+</div>
+<div class="col-xs-6 col-lg-8">
+<br /><br />
+<img src="融资总规模折线图.png" style="margin-bottom: 4vh"/>
+<br /><br />
+</div>
+</div>
+</div>
+      </div>
+
+        <div role="tabpanel" class="tab-pane" id="Trash">
+          <div class="panel panel-default">
+  <div class="panel-heading">&nbsp;&nbsp;&nbsp;知识产权</div>
+  <table class="table" style="margin-bottom: 10vh">
+  <thead>
+    <tr>
+      <th>专利</th>
+      <th>商标</th>
+      <th>著作权</th>
+    </tr>
+  <thead/>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  </table></div>
+        </div>
+      </div>
+      </div>
+    </div>
+</body>
+</html>

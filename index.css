@@ -1,0 +1,67 @@
+.navbar-nav>li>a{
+  padding: 2vh;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-weight: bold;
+}
+
+a {
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #9cf;
+}
+
+#button {
+  background-image: url(s.jfif);
+  background-repeat: no-repeat;
+  padding: 0.6vw;
+}
+
+table {
+  font-size: 1.2vw;
+  padding: 2vw;
+  margin: 3vw;
+  margin-left: 4vw;
+}
+
+th {
+  font-weight: bold;
+  padding: 0.5vw;
+  padding-right: 1.3vw;
+  padding-left: 1.3vw;
+}
+
+td {
+  padding: 0.5vw;
+  padding-right: 1.3vw;
+  padding-left: 1.3vw;
+  padding-right: 1vw;
+  font-style: italic;
+}
+
+.sc1 {
+  opacity: 0;
+}
+
+
+.DownButtonNormal {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: black;
+    font-weight: lighter;
+    background-color: rgb(239, 239, 239);
+    box-sizing: border-box;
+    padding: 2.6px 7.25px;
+    border-width: 0.5px;
+    border-style: outset;
+    border-color: rgb(195,195,195);
+    border-image: initial;
+}

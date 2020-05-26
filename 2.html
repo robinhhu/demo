@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no,minimum-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>index</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <nav class="navbar navbar-default" style="margin-bottom: 0">
+       <div class="col-sm-12 col-lg-12" style="padding-right: 0; font-size: 1.3vw; padding-top: 0.3vh">
+           <ul class="nav navbar-nav">
+             <li>
+              <a href="index.html">
+                Home
+              </a>
+             </li>
+            <li>
+             <a href="1.html">
+               构建企业全息画像
+             </a>
+            </li>
+            <li class="dropdown"><a href="2.html">
+               僵尸企业识别分类
+            </a> </li>
+           </ul>
+       </div>
+  </nav>
+  <div class="jumbotron" style="background-color:#669; margin-bottom: 0">
+    <h2 align=center style="color:white; margin-top: 24vh; margin-bottom: 24vh">僵尸企业识别分类</h2>
+</div>
+
+    </div>
+    <div class="row">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#OceanWarming" aria-controls="OceanWarming" role="tab" data-toggle="tab">单个查询</a></li>
+        <li role="presentation" ><a href="#Sheet" aria-controls="Sheet" role="tab" data-toggle="tab">批量查询</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="OceanWarming">
+          <div class="col-xs-12 col-sm-12">
+            <h2 style="margin-left: 2vw">单个查询</h2>
+          </div>
+          <div class="col-lg-1">
+          </div>
+        <div class="col-lg-3" style="margin-top:4vh">
+
+            <form action="/upload" method="post" enctype="multipart/form-data">
+              <div>
+              <label for="uploads">点击上传文件(csv)</label>
+              <input type="file" name="upload" id="uploads">
+              </div>
+              <div>
+            <button style="color: #333">Submit</button>
+          </div>
+          </form>
+          </div>
+          <div class="col-lg-1" style="margin-top:10vh;margin-bottom: 10vh">
+            <input type="button"  class="sc" value="企业识别">
+            <p class="sc1">
+              是僵尸企业
+            </p>
+          </div>
+            <div class="col-lg-2" style="margin-top:10vh;margin-bottom: 10vh">
+            <input type="button" value="点击生成报告" id = "alert1">
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Sheet">
+          <div class="col-xs-12 col-sm-12">
+            <h2 style="margin-left: 2vw">批量查询</h2>
+          </div>
+          <div class="col-lg-1">
+          </div>
+        <div class="col-lg-3" style="margin-top:4vh">
+
+            <form action="/upload" method="post" enctype="multipart/form-data">
+              <div>
+              <label for="uploads">点击上传文件(csv)</label>
+              <input type="file" name="upload" id="uploads">
+              </div>
+              <div>
+            <button style="color: #333">Submit</button>
+          </div>
+          </form>
+          </div>
+          <div class="col-lg-1" style="margin-top:10vh;margin-bottom: 10vh">
+            <input type="button"  id="alert2" value="企业识别">
+          </div>
+            <div class="col-lg-2" style="margin-top:10vh;margin-bottom: 10vh">
+            <a class="DownButtonNormal" name="DownLoadHistEvent"download="分类结果.csv" href="分类结果.csv">点击生成报告</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
