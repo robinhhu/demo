@@ -54,7 +54,7 @@
             <form action="/upload" method="post" enctype="multipart/form-data">
               <div>
               <label for="uploads">点击上传文件(csv)</label>
-              <input type="file" name="upload" id="uploads">
+              <input type="file" name="upload" id="uploads" multiple="multiple">
               </div>
               <div>
             <button style="color: #333">Submit</button>
@@ -62,13 +62,13 @@
           </form>
           </div>
           <div class="col-lg-1" style="margin-top:10vh;margin-bottom: 10vh">
-            <input type="button"  class="sc" value="企业识别">
+            <input type="button"  class="sc" value="企业分类结果">
             <p class="sc1">
               是僵尸企业
             </p>
           </div>
             <div class="col-lg-2" style="margin-top:10vh;margin-bottom: 10vh">
-            <input type="button" value="点击生成报告" id = "alert1">
+            <input type="button" value="企业筛选结果" id = "alert1">
           </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="Sheet">
@@ -77,12 +77,12 @@
           </div>
           <div class="col-lg-1">
           </div>
-        <div class="col-lg-3" style="margin-top:4vh">
+        <div class="col-lg-2" style="margin-top:4vh">
 
             <form action="/upload" method="post" enctype="multipart/form-data">
               <div>
               <label for="uploads">点击上传文件(csv)</label>
-              <input type="file" name="upload" id="uploads">
+              <input type="file" name="upload" id="uploads" multiple="multiple">
               </div>
               <div>
             <button style="color: #333">Submit</button>
@@ -90,12 +90,9 @@
           </form>
           </div>
           <div class="col-lg-1" style="margin-top:9vh;margin-bottom: 10vh">
-            <a class="DownButtonNormal" name="DownLoadHistEvent"download="分类结果.csv" href="分类结果.csv">企业识别</a>
+            <a class="DownButtonNormal" name="DownLoadHistEvent"download="企业分类结果.csv" href="企业分类结果.csv">企业分类结果</a>
           </div>
-          <div class="col-lg-1" style="margin-top:9vh;margin-bottom: 10vh">
-          <a class="DownButtonNormal" name="DownLoadHistEvent"download="广西省的僵尸企业列表.csv" href="广西省的僵尸企业列表.csv">点击生成报告</a>
-        </div>
-          <div class="col-lg-5" style="margin-top:10vh;margin-bottom: 10vh">
+          <div class="col-lg-6" style="margin-top:10vh;margin-bottom: 10vh;padding-left: 4.8vw">
             <select name="select" id="select" onchange="b();">
               <option value="0" >注册时间</option>
               <option value ="1">2000</option>
@@ -145,7 +142,15 @@
               <option value ="1">企业法人</option>
               <option value ="2">自然人</option>
             </select>
+            <select name="select" id="select" onchange="b();">
+              <option value="0" >是否僵尸企业</option>
+              <option value ="1">0</option>
+              <option value ="2">1</option>
+            </select>
             </div>
+            <div class="col-lg-1" style="margin-top:9vh;margin-bottom: 10vh">
+            <a class="DownButtonNormal" name="DownLoadHistEvent"download="企业筛选报告.csv" href="企业筛选报告.csv">企业筛选结果</a>
+          </div>
           </div>
         </div>
       </div>

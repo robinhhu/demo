@@ -71,3 +71,7 @@ td {
   color: black;
   background-color: rgb(239, 239, 239,1);
 }
+
+img {
+  width: 30vw;
+}
